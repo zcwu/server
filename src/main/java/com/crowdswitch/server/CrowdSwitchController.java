@@ -10,8 +10,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CrowdSwitchController {
 
-    @RequestMapping("/collect")
-    public String collect() {
+    @RequestMapping("/collect1")
+    public String collect1() {
+        System.out.println("---CrowdSwitch---");
+        System.out.println("New data received: 2019/4/26 14:26:06");
+        System.out.println("Operator: China Unicom");
+        System.out.println("Signal strength: -78 dBm");
+        System.out.println("Longitude: 121.409339;  Latitude: 31.048198");
+        System.out.println("Analyzing...");
+        System.out.println("Recommend by CrowdSwitch: China Mobile");
+        return "Hello World";
+    }
+
+    @RequestMapping("/collect2")
+    public String collect2() {
         System.out.println("---CrowdSwitch---");
         System.out.println("New data received: 2019/4/26 14:26:21");
         System.out.println("Operator: China Unicom");
