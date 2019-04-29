@@ -21,4 +21,10 @@ public class CrowdSwitchController {
         System.out.println("Recommend by CrowdSwitch: China Mobile");
         return "Hello World";
     }
+
+    @RequestMapping("/space")
+    public String space() {
+        System.out.println("");
+        return "Hello World";
+    }
 }
